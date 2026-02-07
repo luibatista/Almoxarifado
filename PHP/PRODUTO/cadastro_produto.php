@@ -23,7 +23,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (mysqli_query($conn, $sql)) {
             echo "<script>
                     alert('Produto cadastrado com sucesso!');
-                    window.location.href='listarProdutos.php';
+                    // CORRIGIDO AQUI
+                    window.location.href='listar_prod.php';
                   </script>";
         } else {
             echo "Erro no banco: " . mysqli_error($conn);
@@ -32,6 +33,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "<script>alert('Erro ao fazer upload da imagem.'); window.history.back();</script>";
     }
 } else {
-    header("Location: cadProdutoHtml.php");
+    header("Location: cad_prod.php");
 }
 ?>

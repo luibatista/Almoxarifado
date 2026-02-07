@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../../assets/index.css">
     <link rel="stylesheet" href="../../assets/pedido.css">
     <style>
-        /* Ajuste simples para centralizar o formulário mantendo o teu design */
         body { background-color: #f4f4f4; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
         .form-box { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 100%; max-width: 500px; }
         .form-box h2 { color: #333; text-align: center; margin-bottom: 20px; font-family: 'Poppins', sans-serif; }
@@ -22,7 +21,7 @@
 <body>
     <div class="form-box">
         <h2>Novo Produto</h2>
-        <form action="cadastroProduto.php" method="POST" enctype="multipart/form-data">
+        <form action="cadastro_produto.php" method="POST" enctype="multipart/form-data">
             <div class="input-group">
                 <label>Nome do Produto</label>
                 <input type="text" name="nome" required placeholder="Ex: Caneta Azul">
@@ -48,7 +47,7 @@
 
             <button type="submit" class="btn-submit">Cadastrar</button>
         </form>
-        <a href="listarProdutos.php" class="link-back">Ver Lista de Produtos</a>
+        <a href="listar_prod.php" class="link-back">Ver Lista de Produtos</a>
     </div>
 </body>
 </html>

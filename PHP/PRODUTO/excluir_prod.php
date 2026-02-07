@@ -14,11 +14,11 @@ if (isset($_GET['id'])) {
     $sql = "DELETE FROM produtos WHERE id = $id";
 
     if (mysqli_query($conn, $sql)) {
-        echo "<script>window.location.href='listarProdutos.php';</script>";
+        echo "<script>window.location.href='listar_prod.php';</script>";
     } else {
         echo "Erro ao excluir: " . mysqli_error($conn);
     }
 } else {
-    header("Location: listarProdutos.php");
+    header("Location: listar_prod.php");
 }
 ?>
