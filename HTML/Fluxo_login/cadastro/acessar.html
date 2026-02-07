@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="../../../assets/estilo_login.css">
+    </head>
+<body>
+    <div class="container">
+        <img id="cinza" src="../../../IMG/img_login/PPA2.jpg"> 
+        <div class="qbranco">
+         <div class="teste2"> 
+            <img id="if" src="../../../IMG/img_login/MARCA_IFBA_VERTICAL_CMYK_IFBA.png"> 
+
+            <div id="title_subtitle">
+                <h1 id="title_page">Almoxarifado</h1>
+                <h2 id="subtitle_1">Faça o login ou <a href="../../../PHP/user/cadUserHtml.php" id="subtitle_2">crie uma conta</a></h2>
+            </div>
+
+            <form action="../../../PHP/user/login.php" method="POST">
+                <div class="caixa1">
+                    <div class="caixa11">
+                        <p class="descricao_box">Digite seu E-mail Institucional</p>
+                        <div class="imput_box">
+                            <input class="text_box" type="email" name="email" placeholder="Digite seu E-mail" required style="outline: none">
+                        </div>
+                    </div>
+                   <div class="caixa12">
+                        <p class="descricao_box">Senha</p>
+                        <div class="imput_box">
+                            <input class="text_box" type="password" name="senha" placeholder="Digite a senha" required style="outline: none">
+                        </div>
+                        <p id="esqueceu_senha">Esqueceu ou deseja <a href="#">alterar sua senha</a> ?</p>
+                    
+                        <div class="btn"> 
+                            <button type="submit" class="button" style="cursor: pointer;">Acessar almoxarife</button>
+                        </div>
+                    </div>
+                    <div class="termos">Termos do usuário</div>
+                </div>
+            </form>
+            </div>
+         </div>
+        </div>
+    </div>
+</body>
+</html>
