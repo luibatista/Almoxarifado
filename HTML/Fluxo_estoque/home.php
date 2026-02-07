@@ -14,12 +14,22 @@
 </head>
 
 <body>
-    <?php require_once 'dados.php'; ?>
+   <?php
+include '../../PHP/BANCO/banco.php';
+
+$sql = "SELECT * FROM produtos";
+$result = mysqli_query($conn, $sql);
+
+$produtos = [];
+if (mysqli_num_rows($result) > 0) {
+    while($row = mysqli_fetch_assoc($result)) {
+        $produtos[] = $row;
+    }
+}
+?>
 
     <div class="container">
         <?php
-        // Includes opcionais (verifique se esses arquivos existem e não têm erros)
-        // Se der erro, comente as linhas abaixo temporariamente
         include 'header.php';
         include 'nav.php';
         ?>
@@ -100,7 +110,6 @@
         $(document).ready(function() {
             let carrinho = [];
 
-            // Clique no botão Adicionar
             $('.btn-add-cart').click(function(e) {
                 e.preventDefault();
                 
@@ -108,7 +117,6 @@
                 let nome = $(this).data('nome');
                 let img = $(this).data('img');
 
-                // Verifica se já está no carrinho
                 let itemExistente = carrinho.find(item => item.id === id);
 
                 if (itemExistente) {
@@ -120,10 +128,9 @@
                 atualizarInterfaceCarrinho();
             });
 
-            // Função para desenhar o carrinho no HTML
             function atualizarInterfaceCarrinho() {
                 let container = $('#conteiner_lista_itens');
-                container.empty(); // Limpa a lista atual
+                container.empty();
 
                 let totalItens = 0;
 
@@ -152,14 +159,12 @@
                 }
             }
 
-            // Remover item (Delegação de Evento)
             $(document).on('click', '.btn-remove', function() {
                 let id = $(this).data('id');
                 carrinho = carrinho.filter(item => item.id !== id);
                 atualizarInterfaceCarrinho();
             });
 
-            // Botão Confirmar
             $('#btn_fazer_requisicao').click(function() {
                 if (carrinho.length === 0) {
                     alert("Seu carrinho está vazio!");
