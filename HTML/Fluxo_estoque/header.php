@@ -1,81 +1,67 @@
 <header class="header">
     <div class="container_lefttop">
         <div class="btn">
-            <button class="back-btn" onclick="window.location.href='https://www.youtube.com/';">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path d="M7.91664 5.41663L3.45116 9.88211C3.38607 9.9472 3.38607 10.0527 3.45116 10.1178L7.91664 14.5833M3.40234 9.99996H16.6666" stroke="#19191C" stroke-width="1.5" stroke-linecap="round" />
+            <button class="back-btn" onclick="history.back()" style="border: none; background: transparent; cursor: pointer;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
                 </svg>
             </button>
         </div>
-        <div id="divider"></div>
-        <div class="logo-IFBA"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="36" viewBox="0 0 29 36" fill="none">
-                <path d="M9.49091 4.75676C9.49091 7.1077 7.3663 9.01351 4.74545 9.01351C2.12461 9.01351 0 7.1077 0 4.75676C0 2.40581 2.12461 0.5 4.74545 0.5C7.3663 0.5 9.49091 2.40581 9.49091 4.75676Z" fill="#C91517" />
-                <path d="M10.5455 1.91892C10.5455 1.39649 11.0176 0.972973 11.6 0.972973H17.9273C18.5097 0.972973 18.9818 1.39649 18.9818 1.91892V7.59459C18.9818 8.11703 18.5097 8.54054 17.9273 8.54054H11.6C11.0176 8.54054 10.5455 8.11703 10.5455 7.59459V1.91892Z" fill="#379936" />
-                <path d="M20.5636 1.91892C20.5636 1.39649 21.0358 0.972973 21.6182 0.972973H27.9455C28.5279 0.972973 29 1.39649 29 1.91892V7.59459C29 8.11703 28.5279 8.54054 27.9455 8.54054H21.6182C21.0358 8.54054 20.5636 8.11703 20.5636 7.59459V1.91892Z" fill="#379936" />
-                <path d="M10.5455 10.9054C10.5455 10.383 11.0176 9.95946 11.6 9.95946H17.9273C18.5097 9.95946 18.9818 10.383 18.9818 10.9054V16.5811C18.9818 17.1035 18.5097 17.527 17.9273 17.527H11.6C11.0176 17.527 10.5455 17.1035 10.5455 16.5811V10.9054Z" fill="#379936" />
-                <path d="M0.527273 10.9054C0.527273 10.383 0.999409 9.95946 1.58182 9.95946H7.90909C8.4915 9.95946 8.96364 10.383 8.96364 10.9054V16.5811C8.96364 17.1035 8.4915 17.527 7.90909 17.527H1.58182C0.999409 17.527 0.527273 17.1035 0.527273 16.5811V10.9054Z" fill="#379936" />
-                <path d="M0.527273 19.8919C0.527273 19.3695 0.999409 18.9459 1.58182 18.9459H7.90909C8.4915 18.9459 8.96364 19.3695 8.96364 19.8919V25.5676C8.96364 26.09 8.4915 26.5135 7.90909 26.5135H1.58182C0.999409 26.5135 0.527273 26.09 0.527273 25.5676V19.8919Z" fill="#379936" />
-                <path d="M10.5455 19.8919C10.5455 19.3695 11.0176 18.9459 11.6 18.9459H17.9273C18.5097 18.9459 18.9818 19.3695 18.9818 19.8919V25.5676C18.9818 26.09 18.5097 26.5135 17.9273 26.5135H11.6C11.0176 26.5135 10.5455 26.09 10.5455 25.5676V19.8919Z" fill="#379936" />
-                <path d="M10.5455 28.8784C10.5455 28.3559 11.0176 27.9324 11.6 27.9324H17.9273C18.5097 27.9324 18.9818 28.3559 18.9818 28.8784V34.5541C18.9818 35.0765 18.5097 35.5 17.9273 35.5H11.6C11.0176 35.5 10.5455 35.0765 10.5455 34.5541V28.8784Z" fill="#379936" />
-                <path d="M0.527273 28.8784C0.527273 28.3559 0.999409 27.9324 1.58182 27.9324H7.90909C8.4915 27.9324 8.96364 28.3559 8.96364 28.8784V34.5541C8.96364 35.0765 8.4915 35.5 7.90909 35.5H1.58182C0.999409 35.5 0.527273 35.0765 0.527273 34.5541V28.8784Z" fill="#379936" />
-                <path d="M20.5636 19.8919C20.5636 19.3695 21.0358 18.9459 21.6182 18.9459H27.9455C28.5279 18.9459 29 19.3695 29 19.8919V25.5676C29 26.09 28.5279 26.5135 27.9455 26.5135H21.6182C21.0358 26.5135 20.5636 26.09 20.5636 25.5676V19.8919Z" fill="#379936" />
-            </svg></div>
-        <div class="header_text">
-            <p id="text_top">Almoxarifado</p>
-            <p id="text_bellow">Social</p>
+        
+        <div id="divider" style="width: 1px; height: 30px; background: #ccc; margin: 0 15px;"></div>
+        
+        <div class="logo-IFBA">
+            <img src="../../IMG/img_login/MARCA_IFBA_VERTICAL_CMYK_IFBA.png" alt="IFBA" style="height: 45px; width: auto;">
+        </div>
+        
+        <div class="header_text" style="display: flex; flex-direction: column; justify-content: center; margin-left: 10px;">
+            <p id="text_top" style="margin: 0; line-height: 1.2 !important; font-size: 18px; font-weight: bold; color: #19191C; font-family: 'Poppins', sans-serif;">Almoxarifado</p>
+            <p id="text_bellow" style="margin: 0; line-height: 1.2 !important; font-size: 14px; color: #666; font-family: 'Poppins', sans-serif;">Sistema Web</p>
         </div>
     </div>
-    <menu class="menu">
-        <ul class="container_menu">
+
+    <menu class="menu" style="display: flex; align-items: center; gap: 30px;">
+        <ul class="container_menu" style="display: flex; list-style: none; gap: 25px; padding: 0; margin: 0;">
+            
             <li class="item_top">
-                <a class="icon_top">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M3.95353 8.61072L10.4175 3.54689C11.3483 2.8177 12.6517 2.8177 13.5825 3.54689L20.0465 8.61072C20.7843 9.18877 20.9893 10.0491 20.9996 11.0435C21.0001 11.0974 20.9984 11.1495 20.9943 11.2033C20.9525 11.7548 20.6634 15.1249 19.5949 18.9084C19.2173 19.9615 18.3289 21 17.1067 21H15.918C15.1777 21 14.4713 20.3956 14.4713 19.65L14.5776 16.846C14.5776 15.4122 13.4236 14.2498 12 14.2498C10.5764 14.2498 9.42239 15.4122 9.42239 16.846L9.54168 19.65C9.54168 20.3956 8.82229 21 8.08203 21H6.89335C5.6711 21 4.78269 19.9615 4.40511 18.9084C3.33663 15.1249 3.0475 11.7548 3.00568 11.2033C3.0016 11.1495 2.99986 11.0974 3.00041 11.0435C3.01068 10.0491 3.21566 9.18877 3.95353 8.61072Z" fill="#135911" />
-                        </svg></a>
-                    <a href="#" class="item_text">inicio</a>
+                <a href="home.php" title="Início" style="text-decoration: none; display: flex; align-items: center; justify-content: center; color: #135911; padding: 8px; border-radius: 50%; transition: 0.3s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
                 </a>
             </li>
+
             <li class="item_top">
-                <a class="icon_top" href="#">
-                    <a href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M14 20.9617C11.4757 21.0582 9.16166 20.9724 6.23865 20.7048C5.19543 20.6092 4.36239 19.736 4.26588 18.6277C3.87042 14.0861 3.94716 10.903 4.292 6.41419C4.37877 5.28469 5.21856 4.38258 6.28078 4.28634C10.4928 3.90469 13.4667 3.9038 17.7331 4.28821C18.7928 4.38368 19.6326 5.28098 19.7203 6.4076C19.9822 9.77112 20.0688 12.3867 19.9433 15.3485M14 20.9617L19.9433 15.3485M14 20.9617V17.8485C14 16.4678 15.1193 15.3485 16.5 15.3485H19.9433M8 3V5.5M16 3V5.5" stroke="#135911" stroke-width="1.5" stroke-linecap="round" />
-                            <path d="M8 9.5H16" stroke="#135911" stroke-width="1.5" stroke-linecap="round" />
-                            <path d="M8 13H13" stroke="#135911" stroke-width="1.5" stroke-linecap="round" />
-                        </svg></a>
-                    <a href="#" class="item_text">Pedidos</a>
+                <a href="../../PHP/PRODUTO/listar_prod.php" title="Gerenciar Estoque" style="text-decoration: none; display: flex; align-items: center; justify-content: center; color: #135911; padding: 8px; border-radius: 50%; transition: 0.3s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
                 </a>
             </li>
+
             <li class="item_top">
-                <a class="icon_top">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <circle cx="12" cy="12" r="9" stroke="#135911" stroke-width="1.5" />
-                            <path d="M12 6.5V11.9586C12 11.9851 11.9895 12.0105 11.9707 12.0293L9 15" stroke="#135911" stroke-width="1.5" stroke-linecap="round" />
-                        </svg></a>
-                    <a href="#" class="item_text">Histórico</a>
+                <a href="../../PHP/user/logout.php" title="Sair" style="text-decoration: none; display: flex; align-items: center; justify-content: center; color: #dc3545; padding: 8px; border-radius: 50%; transition: 0.3s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        <polyline points="16 17 21 12 16 7"></polyline>
+                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
                 </a>
             </li>
         </ul>
-        <div class="container_profile_timer">
-            <div id="timer">
-                <div id="clock">
-                    <span id="hrs">00</span>
-                    <span>:</span>
-                    <span id="min">00</span>
-                    <span>:</span>
-                    <span id="sec">00</span>
-                </div>
-                <div id="calender">
-                    <span id="date">00</span>
-                    <span>/</span>
-                    <span id="month">00</span>
-                    <span>/</span>
-                    <span id="year">0000</span>
-                </div>
+
+        <div class="container_profile_timer" style="display: flex; align-items: center; gap: 10px;">
+            <div id="timer" style="background: #eee; padding: 5px 15px; border-radius: 15px; font-size: 14px;">
+                <span style="font-weight: bold; color: #135911;">
+                    <?php echo isset($_SESSION['nome']) ? $_SESSION['nome'] : 'Olá'; ?>
+                </span>
             </div>
-            <a href="#" class="profile"></a>
+            <div class="profile" style="width: 35px; height: 35px; background: #ccc; border-radius: 50%;"></div>
         </div>
     </menu>
-
 </header>

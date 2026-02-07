@@ -6,7 +6,7 @@
                             <path id="Vector" d="M6.06588 19.281C4.87088 19.2074 3.92612 18.5176 3.8285 17.6539C3.44056 14.2212 3.35423 12.8704 3.79912 9.39743C3.90769 8.54989 4.84486 7.88216 6.01848 7.80911C6.70614 7.76631 7.36383 7.72959 8 7.69895M18.9497 19.2796C20.1418 19.2066 21.0866 18.5204 21.1853 17.6589C21.5825 14.1912 21.6214 12.8464 21.2002 9.4075C21.0958 8.55547 20.1574 7.88102 18.9781 7.80726C18.2921 7.76436 17.6356 7.72762 17 7.69705M8 7.69895V5.95833C8 4.46256 9.11929 3.25 10.5 3.25H14.5C15.8807 3.25 17 4.46256 17 5.95833V7.69705M8 7.69895C11.1871 7.54548 13.8338 7.54475 17 7.69705M8 15.1667H9M9 15.1667L8.40765 19.6587C8.1925 21.2902 9.36115 22.75 10.8825 22.75H14.1175C15.6388 22.75 16.8075 21.2902 16.5924 19.6587L16 15.1667M9 15.1667H16M16 15.1667H17M15 11.375H17" stroke="#828487" stroke-width="1.5" stroke-linecap="round" />
                         </g>
                     </svg>
-                    <a href="informatica.html" class="text_leftbar carregar">Eletrônico</a>
+                    <a href="informatica.php" class="text_leftbar carregar">Eletrônico</a>
                 </button>
             </div>
             <div class="item_leftbar">
@@ -19,7 +19,7 @@
                             <path id="Shape_4" d="M3.59681 0.333374C1.96361 0.333374 0.68042 2.33602 0.68042 4.88786C0.68042 7.4397 1.96361 9.43736 3.59681 9.43736C5.23484 9.43736 6.5132 7.4397 6.5132 4.88786C6.5132 2.33602 5.23484 0.333374 3.59681 0.333374Z" fill="#828487" />
                         </g>
                     </svg>
-                    <a href="alimento.html" class="text_leftbar carregar">Alimento</a>
+                    <a href="alimento.php" class="text_leftbar carregar">Alimento</a>
                 </button>
             </div>
             <div class="item_leftbar">
@@ -34,7 +34,7 @@
                             </g>
                         </g>
                     </svg>
-                    <a href="papelaria.html" class="text_leftbar carregar">Papelaria</a>
+                    <a href="papelaria.php" class="text_leftbar carregar">Papelaria</a>
                 </button>
             </div>
             <div class="item_leftbar">
@@ -46,7 +46,7 @@
                             </g>
                         </g>
                     </svg>
-                    <a href="limpeza.html" class="text_leftbar carregar">Limpeza</a>
+                    <a href="limpeza.php" class="text_leftbar carregar">Limpeza</a>
                 </button>
             </div>
         </nav>

@@ -1,49 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de redefinição</title>
-    <link rel="stylesheet" href="../../../assets/style.css">
+    <title>Nova Senha</title>
+    <link rel="stylesheet" href="../../../assets/estilo_login.css">
 </head>
 <body>
-    <div class = "container">
-        <img id="cinza" src="Imagens/PPA2.jpg"> 
+    <div class="container">
+        <img id="cinza" src="../../../IMG/img_login/PPA2.jpg"> 
         <div class="qbranco">
-         <div class="teste2"> 
-            <img id="if" src="Imagens/MARCA_IFBA_VERTICAL_CMYK_IFBA.png"> 
+            <div class="teste2"> 
+                <img id="if" src="../../../IMG/img_login/MARCA_IFBA_VERTICAL_CMYK_IFBA.png"> 
 
-            <div id="title_subtitle">
-                <h1  id="title_page">Almoxarifado</h1>
-
+                <div id="title_subtitle">
+                    <h1 id="title_page">Redefinir Senha</h1>
+                    <h2 id="subtitle_1">Crie uma nova senha segura</h2>
                 </div>
 
-                <div class="caixa1">
-                    <div class="caixa11">
-                    <p class="descricao_box">Digite sua nova senha</p>
-                    <div class="imput_box">
-                        <input class="text_box" type = "text"  placeholder="Digite sua nova senha" required style="outline: none">
+                <form action="../../../PHP/user/atualizar_senha.php" method="POST">
+                    <div class="caixa1">
+                        <div class="caixa11">
+                            <p class="descricao_box">Nova Senha</p>
+                            <div class="imput_box">
+                                <input class="text_box" type="password" name="senha1" placeholder="Digite a nova senha" required style="outline: none">
+                            </div>
+                        </div>
+                        
+                        <div class="caixa12">
+                            <p class="descricao_box">Confirmar Senha</p>
+                            <div class="imput_box">
+                                <input class="text_box" type="password" name="senha2" placeholder="Repita a senha" required style="outline: none">
+                            </div>
+                            
+                            <div class="btn"> 
+                                <button type="submit" class="button" style="cursor: pointer;">Salvar Senha</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-               <div class="caixa12">
-                    <p class="descricao_box">Digite novamente sua nova senha</p>
-                    <div class="imput_box">
-                        <input class="text_box" type = "password"  placeholder="Digite a senha" required style="outline: none">
-                    </div>
-                                
-                    <div class="btn"> 
-                        <a href="#" class="button">Voltar ao Login</a>
-                    </div>
-                </div>
-                <div class= "termos">Termos do usuário</div>
+                </form>
             </div>
-
-                </div>
-                    
-                </div>
-            </div>
-         </div>
-        </div>
         </div>
     </div>
 </body>

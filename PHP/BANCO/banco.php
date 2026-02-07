@@ -1,7 +1,7 @@
 <?php
 $host = "localhost";
 $usuario = "root";
-$senha = "7777"; // Se tiver senha no seu Workbench, coloque aqui
+$senha = ""; // Se tiver senha no seu Workbench, coloque aqui
 $bd = "almox";
 
 $conn = mysqli_connect($host, $usuario, $senha, $bd);

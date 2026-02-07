@@ -14,7 +14,8 @@
 </head>
 
 <body>
-   <?php
+  <?php
+session_start(); 
 include '../../PHP/BANCO/banco.php';
 
 $sql = "SELECT * FROM produtos";

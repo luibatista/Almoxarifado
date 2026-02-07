@@ -1,46 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de rec email</title>
-    <link rel="stylesheet" href="../../../assets/style.css">
+    <title>Recuperar Senha</title>
+    <link rel="stylesheet" href="../../../assets/estilo_login.css">
 </head>
 <body>
-    <div class = "container">
-        <img id="cinza" src="Imagens/PPA2.jpg"> 
+    <div class="container">
+        <img id="cinza" src="../../../IMG/img_login/PPA2.jpg"> 
         <div class="qbranco">
-         <div class="teste2"> 
-            <img id="if" src="Imagens/MARCA_IFBA_VERTICAL_CMYK_IFBA.png"> 
+            <div class="teste2"> 
+                <img id="if" src="../../../IMG/img_login/MARCA_IFBA_VERTICAL_CMYK_IFBA.png"> 
 
-            <div id="title_subtitle">
-                <h1  id="title_page">Almoxarifado</h1>
-                <h2 id="subtitle_1">Esqueci minha <a href="#" id="subtitle_2">senha</a></h2>
+                <div id="title_subtitle">
+                    <h1 id="title_page">Recuperar Senha</h1>
+                    <h2 id="subtitle_1">Informe seu e-mail para receber o código</h2>
                 </div>
 
-                <div class="caixa1">
-                    <div class="caixa11">
-                    <p class="descricao_box">Digite o e-mail de usuário e enviaremos um e-mail para recuperar sua senha</p>
-                    <div class="imput_box">
-                        <input class="text_box" type = "text"  placeholder="Digite seu E-mail Institucional" required style="outline: none">
-                    </div>
-                    <p id="txt_final">Voltar para o login.</p>
-                </div>
-              
+             <form action="../../../PHP/user/valida_email.php" method="POST">
+                    <div class="caixa1">
+                        <div class="caixa11">
+                            <p class="descricao_box">E-mail Cadastrado</p>
+                            <div class="imput_box">
+                                <input class="text_box" type="email" name="email" placeholder="Digite seu e-mail" required style="outline: none">
+                            </div>
+                        </div>
                         
-                    <div class="btn"> 
-                        <a href="#" class="button">Ok</a>
+                        <div class="caixa12">
+                            <div class="btn"> 
+                                <button type="submit" class="button" style="cursor: pointer;">Enviar Código</button>
+                            </div>
+                            
+                            <div class="esqueceu-senha" style="text-align: center; margin-top: 15px;">
+                                <a href="acessar.html">Voltar para o Login</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class= "termos">Termos do usuário</div>
+                </form>
             </div>
-
-                </div>
-                    
-                </div>
-            </div>
-         </div>
-        </div>
         </div>
     </div>
 </body>
